@@ -1,4 +1,4 @@
-import * as service from '@/app/modules/auth/auth.service';
+import * as service from './auth.service';
 
 import { catchAsync, sendResponse } from '@/shared';
 import { HTTP_CODE } from '@/shared/constants/_httpCodes';

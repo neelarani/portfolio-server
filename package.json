@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun --watch src/_server.ts",
     "build": "tsc",
-    "start": "bun run dist/_server.js",
+    "start": "node dist/_server.js",
     "prisma:migrate": "prisma migrate dev",
     "prisma:reset": "prisma migrate reset",
     "postinstall": "prisma generate"
