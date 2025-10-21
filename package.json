@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun --watch src/_server.ts",
     "build": "tsc",
-    "start": "bun dist/server.js"
+    "start": "node dist/server.js"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
