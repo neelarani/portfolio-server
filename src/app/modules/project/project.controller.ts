@@ -1,5 +1,6 @@
-import { catchAsync, HTTP_CODE, sendResponse } from '@/shared';
+import { catchAsync, sendResponse } from '@/shared';
 import * as service from '@/app/modules/project/project.service';
+import { HTTP_CODE } from '@/shared/constants/_httpCodes';
 
 export const createProject = catchAsync(async (req, res) => {
   const payload = req.body;

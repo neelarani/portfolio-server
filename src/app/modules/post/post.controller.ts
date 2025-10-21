@@ -1,5 +1,6 @@
-import { catchAsync, HTTP_CODE, sendResponse } from '@/shared';
+import { catchAsync, sendResponse } from '@/shared';
 import * as service from './post.service';
+import { HTTP_CODE } from '@/shared/constants/_httpCodes';
 
 export const createPost = catchAsync(async (req, res) => {
   const post = req.body;

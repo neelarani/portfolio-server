@@ -1,6 +1,7 @@
 import * as service from '@/app/modules/auth/auth.service';
 
-import { catchAsync, HTTP_CODE, sendResponse } from '@/shared';
+import { catchAsync, sendResponse } from '@/shared';
+import { HTTP_CODE } from '@/shared/constants/_httpCodes';
 
 export const login = catchAsync(async (req, res) => {
   const result = await service.login(req.body);
